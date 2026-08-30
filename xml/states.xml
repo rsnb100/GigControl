@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mididmx>
+  <state>
+    <name>Strobe All</name>
+    <scene>GB7 Strobe</scene>
+    <scene>led bar back strobe</scene>
+    <scene>SB14 Strobe</scene>
+    <scene>led panels strobe</scene>
+    <scene>qpix strobe</scene>
+    <scene>qpix white</scene>
+    <scene>gls4 strobe</scene>
+    <scene>Mini Movers Strobe</scene>
+    <chase>GB7 Mad Chase</chase>
+    <chase>SB14 Mad</chase>
+    <chase>Mini Movers Mad</chase>
+    <exclusive>true</exclusive>
+    <oscmapping>/states/multi1/1/1</oscmapping>
+  </state>
+  <state>
+    <name>Blackout</name>
+    <exclusive>true</exclusive>
+    <oscmapping>/states/multi1/1/6</oscmapping>
+  </state>
+  <state>
+    <name>Red Jake Spot</name>
+    <scene>led bar back red</scene>
+    <scene>qpix red</scene>
+    <scene>gls4 red</scene>
+    <scene>led panels red</scene>
+    <scene>Jake</scene>
+    <exclusive>true</exclusive>
+    <oscmapping>/states/multi1/1/2</oscmapping>
+  </state>
+  <state>
+    <name>Blue Jake Spot</name>
+    <scene>led bar back blue</scene>
+    <scene>qpix blue</scene>
+    <scene>gls4 blue</scene>
+    <scene>led panels blue</scene>
+    <scene>Jake</scene>
+    <exclusive>true</exclusive>
+    <oscmapping>/states/multi1/1/3</oscmapping>
+  </state>
+  <state>
+    <name>Mirror Ball White</name>
+    <scene>Mirror Ball White</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/1/4</oscmapping>
+  </state>
+  <state>
+    <name>All Lasers Circle</name>
+    <scene>Lasers All</scene>
+    <scene>lasers circle</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/6/1</oscmapping>
+  </state>
+  <state>
+    <name>Colour Chase</name>
+    <scene>SB14 Static 1</scene>
+    <chase>Colour Step Chase Tap</chase>
+    <chase>SB14 RGB Chs1</chase>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/5/1</oscmapping>
+  </state>
+  <state>
+    <name>Jake</name>
+    <scene>Jake</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/6/5</oscmapping>
+  </state>
+  <state>
+    <name>Mirror Ball Blue</name>
+    <scene>Mirror Ball Blue</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/2/4</oscmapping>
+  </state>
+  <state>
+    <name>Blue Red Move</name>
+    <scene>led bar back blue</scene>
+    <scene>SB14 Red</scene>
+    <scene>qpix blue</scene>
+    <scene>led panels blue</scene>
+    <chase>SB14 Mad Slow</chase>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/5/2</oscmapping>
+  </state>
+  <state>
+    <name>Red Blue Move</name>
+    <scene>led bar back red</scene>
+    <scene>SB14 Blue</scene>
+    <scene>qpix red</scene>
+    <scene>led panels red</scene>
+    <chase>SB14 Mad Slow</chase>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/5/3</oscmapping>
+  </state>
+  <state>
+    <name>Back Lasers Line</name>
+    <scene>Lasers Back</scene>
+    <scene>lasers horizontal line</scene>
+    <exclusive>true</exclusive>
+    <oscmapping>/states/multi1/6/2</oscmapping>
+  </state>
+  <state>
+    <name>Sam</name>
+    <scene>Sam</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/6/6</oscmapping>
+  </state>
+  <state>
+    <name>Ash</name>
+    <scene>Ash</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/6/4</oscmapping>
+  </state>
+  <state>
+    <name>GB7 White Chase</name>
+    <scene>GB7 White</scene>
+    <chase>GB7 Mad Chase</chase>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/4/6</oscmapping>
+  </state>
+  <state>
+    <name>Blue Red Static</name>
+    <scene>led bar back blue</scene>
+    <scene>SB14 Red</scene>
+    <scene>qpix blue</scene>
+    <scene>SB14 Static 1</scene>
+    <scene>led panels blue</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/4/2</oscmapping>
+  </state>
+  <state>
+    <name>Red Blue Static</name>
+    <scene>led bar back red</scene>
+    <scene>SB14 Blue</scene>
+    <scene>qpix red</scene>
+    <scene>SB14 Static 1</scene>
+    <scene>led panels red</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/4/3</oscmapping>
+  </state>
+  <state>
+    <name>Blue White Move</name>
+    <scene>led bar back blue</scene>
+    <scene>qpix blue</scene>
+    <scene>led panels blue</scene>
+    <scene>SB14 White</scene>
+    <chase>SB14 Mad Med</chase>
+    <exclusive>true</exclusive>
+    <oscmapping>/states/multi1/5/4</oscmapping>
+  </state>
+  <state>
+    <name>Red White Move</name>
+    <scene>led bar back red</scene>
+    <scene>qpix red</scene>
+    <scene>led panels red</scene>
+    <scene>SB14 White</scene>
+    <chase>SB14 Mad Med</chase>
+    <exclusive>true</exclusive>
+    <oscmapping>/states/multi1/4/4</oscmapping>
+  </state>
+  <state>
+    <name>Ball White Ash</name>
+    <scene>Mirror Ball White</scene>
+    <scene>Ash</scene>
+    <exclusive>true</exclusive>
+    <oscmapping>/states/multi1/1/5</oscmapping>
+  </state>
+  <state>
+    <name>All Lasers Auto</name>
+    <scene>lasers auto</scene>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/4/1</oscmapping>
+  </state>
+  <state>
+    <name>Lasers Point Chase</name>
+    <scene>lasers static point</scene>
+    <scene>Lasers XY Fast</scene>
+    <chase>Lasers Chase 2</chase>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/3/1</oscmapping>
+  </state>
+  <state>
+    <name>Current</name>
+    <scene>Lasers All</scene>
+    <scene>SB14 Static 1</scene>
+    <chase>Colour Step Chase Tap</chase>
+    <chase>SB14 RGB Chs1</chase>
+    <exclusive>false</exclusive>
+    <oscmapping>/states/multi1/2/6</oscmapping>
+  </state>
+</mididmx>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mididmx>
+
+    <!-- VLC Mappings --> 
+	
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/enumvlc</address>
+   <command>enumeratevlcfiles</command>
+   <value></value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/encoder</address>
+   <command>vlcinc</command>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlcup</address>
+   <command>vlcinc</command>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlcdown</address>
+   <command>vlcinc</command>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/playselected</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playselected</sendaddress>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/playselectedsound</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playselected</sendaddress>
+   <volume>240</volume>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/playselectedrepeat</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playselectedrepeat</sendaddress>
+  </oscmapping>
+ 
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/playselectedrepeatsound</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playselectedrepeat</sendaddress>
+   <volume>240</volume>
+  </oscmapping> 
+  
+
+	
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/StopAll</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/stop</sendaddress>
+   <value></value>
+  </oscmapping>
+ 
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/EndSong</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/stop</sendaddress>
+   <value></value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/test</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>R:\ChuMaShu\Video\File 24-01-2016, 15 34 44.mov</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/logorotate</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Logo\Chu Logo Inverted Rotate.m4v</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/logoflames</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Logo\Chu Logo Flames.mpg</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/radioactive</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Beeple1_2.mpg</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/route66</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\route66.mp4</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/thunderbirds</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playonce</sendaddress>
+   <value>e:\Thunderbirds RB 6.mpg</value>
+   <volume>256</volume>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/tigerfeet</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\TigerFeet.avi</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/hellsbells</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Hells Bells.mpg</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/cars</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Car Crash Mix.mp4</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/motorway</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Motorway Driving.mp4</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/shineon</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Shine On.mp4</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/glassbrain</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Glass brain.mp4</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/frankenstein</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Frankenstein.mp4</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/space</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Journey Through Space.mp4</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/wayward</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Wayward Son.mp4</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/testcard</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\TestCard_Sam.mov</value>
+   <volume>205</volume>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/thriller</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playonce</sendaddress>
+   <value>e:\ChuMaShuThrillermov.mov</value>
+   <volume>256</volume>
+  </oscmapping> 
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/fractalzoom</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Fractal Zoom.mp4</value>
+  </oscmapping> 
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/thunderstruck</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Thunderstruck.mp4</value>
+  </oscmapping> 
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/kaleidoscope</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Kaleidoscope.mp4</value>
+  </oscmapping> 
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/wingsuit</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Wingsuit.mp4</value>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/comfnumb</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Comfortably Numb.mp4</value>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/elecsheep</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Electric Sheep.mp4</value>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/panicstation</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\PanicStation.mp4</value>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/ironman</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Iron Man.mp4</value>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/facebook</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Facebook.mp4</value>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/universe</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Expanding Universe.mp4</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/blueparticle</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Blue Particle.mp4</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/bluetunnel</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Blue Tunnel.mp4</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/greenpattern</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Green Pattern.mp4</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/bluewaves</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Blue Waves.mp4</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/orangefiber</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Orange Fiber.mp4</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/spaceride</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\Space Ride.mp4</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/money</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playonce</sendaddress>
+   <value>e:\Money.mov</value>
+   <volume>256</volume>
+  </oscmapping>
+  
+   <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/email</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playrepeat</sendaddress>
+   <value>e:\EmailSignup.mp4</value>
+   <volume>256</volume>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/stop</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/stop</sendaddress>
+   <value></value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/cam1</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playstream</sendaddress>
+   <value>rtsp://root:Penguin1@192.168.1.125/axis-media/media.amp</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/vlc/webcam</address>
+   <command>vlc</command>
+   <sendaddress>/vlc/playstream</sendaddress>
+   <value>dshow://</value>
+  </oscmapping>
+  
+ </mididmx>
+ 

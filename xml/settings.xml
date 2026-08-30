@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <MIDIDevice />
+  <MIDIOutDevice />
+  <DMXDevice />
+  <Running>True</Running>
+  <ShowLevels>False</ShowLevels>
+  <MaxChannels>256</MaxChannels>
+  <DMXInterval>10</DMXInterval>
+  <FixtureFile>fixtures.xml</FixtureFile>
+  <PatchFile>patches.xml</PatchFile>
+  <SceneFile>scenes*.xml</SceneFile>
+  <ChaseFile>chases*.xml</ChaseFile>
+  <MidiMappingsFile>midimappings.xml</MidiMappingsFile>
+  <OSCMappingsFile>oscmappings*.xml</OSCMappingsFile>
+  <ArtNetAddress>192.168.1.189</ArtNetAddress>
+  <EnableArtNet>False</EnableArtNet>
+  <EnableOSC>True</EnableOSC>
+  <OSCPort>8000</OSCPort>
+  <VlcIP>192.168.1.221</VlcIP>
+  <VLCBrowsePath>video</VLCBrowsePath>
+  <VLCExtensions>*.mov;*.mp4;*.mpg;*.m4v;*.avi;*.m3u</VLCExtensions>
+  <X32IP>192.168.1.232</X32IP>
+  <X32TimerInterval>500</X32TimerInterval>
+  <Tempo>301</Tempo>
+  <uDMX>True</uDMX>
+  <Feedback>True</Feedback>
+  <Debug>False</Debug>
+  <HazeLevelAddress>/1/haze</HazeLevelAddress>
+  <HazeTimeAddress>/1/hazetime</HazeTimeAddress>
+  <OscResendLoopback>True</OscResendLoopback>
+  <ReaperIP>192.168.1.41</ReaperIP>
+  <ReaperPort>8001</ReaperPort>
+  <OSCLoopbackIP>192.168.1.41</OSCLoopbackIP>
+  <OSCLoopbackPort>7700</OSCLoopbackPort>
+  <OSCLoopbackEnabled>False</OSCLoopbackEnabled>
+  <BaseScene>Wash Movers White</BaseScene>
+  <BaseSceneActive>False</BaseSceneActive>
+</Settings>

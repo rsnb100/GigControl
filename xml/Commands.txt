@@ -1,0 +1,38 @@
+Common:
+<maptype>command</maptype>
+<address></address>
+<command></command>
+
+Commands:
+alloff
+
+reload
+
+tap
+
+telldus
+
+x32
+	sendaddress - osc address to send
+	value - value to send
+	type - value type
+
+x32-fader
+	x32address - osc address to send eg /ch/01/mix/01/level
+	client-ip - address of the client to receive updates
+	client-port - port that the client will receive updates on
+
+vlc
+	sendaddress
+		/vlc/playonce - play vid once
+		/vlc/playrepeat - play vid repeat
+		/vlc/stop - stop vid
+		/vlc/playstream - play stream
+	value - local path to video eg e:\testvid.mp4 OR stream address eg rtsp://user:password@192.168.1.50/axis-media/media.amp
+
+sendosc
+	ip - destination ip
+	type - value type
+	sendaddress - osc address to send
+	port - destination port eg 8001
+	value - value to send

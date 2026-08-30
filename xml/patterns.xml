@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patterns>
+
+ <pattern>
+  <name>Tilt Wave</name>
+  <point>
+	<pan>127</pan>
+	<tilt>20</tilt>
+  </point>
+   <point>
+	<pan>127</pan>
+	<tilt>235</tilt>
+  </point>
+ </pattern>
+ 
+ <pattern>
+  <name>Circle</name>
+  <point>
+	<pan>0</pan>
+	<tilt>80</tilt>
+  </point>
+   <point>
+	<pan>180</pan>
+	<tilt>80</tilt>
+  </point>
+ </pattern>
+ 
+ <pattern>
+  <name>Square</name>
+  <point>
+	<pan>0</pan>
+	<tilt>40</tilt>
+  </point>
+  <point>
+	<pan>45</pan>
+	<tilt>40</tilt>
+  </point>
+  <point>
+	<pan>45</pan>
+	<tilt>215</tilt>
+  </point>
+  <point>
+	<pan>0</pan>
+	<tilt>215</tilt>
+  </point>
+ </pattern>
+ 
+  <pattern>
+  <name>ZigZag</name>
+  <point>
+	<pan>0</pan>
+	<tilt>40</tilt>
+  </point>
+  <point>
+	<pan>45</pan>
+	<tilt>40</tilt>
+  </point>
+  <point>
+	<pan>0</pan>
+	<tilt>40</tilt>
+  </point>
+  <point>
+	<pan>0</pan>
+	<tilt>215</tilt>
+  </point>
+  <point>
+	<pan>45</pan>
+	<tilt>215</tilt>
+  </point>
+  <point>
+	<pan>0</pan>
+	<tilt>215</tilt>
+  </point>
+ </pattern>
+ 
+  <pattern>
+  <name>Flip</name>
+  <point>
+	<pan>0</pan>
+	<tilt>60</tilt>
+  </point>
+  <point>
+	<pan>90</pan>
+	<tilt>60</tilt>
+  </point>
+  <point>
+	<pan>90</pan>
+	<tilt>195</tilt>
+  </point>
+  <point>
+	<pan>180</pan>
+	<tilt>195</tilt>
+  </point>
+  <point>
+	<pan>180</pan>
+	<tilt>60</tilt>
+  </point>
+  <point>
+	<pan>90</pan>
+	<tilt>60</tilt>
+  </point>
+  <point>
+	<pan>90</pan>
+	<tilt>195</tilt>
+  </point>
+  <point>
+	<pan>0</pan>
+	<tilt>195</tilt>
+  </point>
+ </pattern>
+ 
+</patterns>

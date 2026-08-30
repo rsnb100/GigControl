@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mididmx>
+
+  <!-- Telldus Mappings -->
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/AuxOn</address>
+   <command>telldus</command>
+   <device>0</device>
+   <value>on</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/AuxOn</address>
+   <command>telldus</command>
+   <device>1</device>
+   <value>on</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/AuxOff</address>
+   <command>telldus</command>
+   <device>0</device>
+   <value>off</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/AuxOff</address>
+   <command>telldus</command>
+   <device>1</device>
+   <value>off</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/Stop</address>
+   <command>telldus</command>
+   <device>0</device>
+   <value>off</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/Stop</address>
+   <command>telldus</command>
+   <device>1</device>
+   <value>off</value>
+  </oscmapping> 
+ 
+   <oscmapping>
+   <maptype>command</maptype>
+   <address>/StopAll</address>
+   <command>telldus</command>
+   <device>0</device>
+   <value>off</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/StopAll</address>
+   <command>telldus</command>
+   <device>1</device>
+   <value>off</value>
+  </oscmapping> 
+  
+   <oscmapping>
+   <maptype>command</maptype>
+   <address>/EndSong</address>
+   <command>telldus</command>
+   <device>0</device>
+   <value>off</value>
+  </oscmapping> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/EndSong</address>
+   <command>telldus</command>
+   <device>1</device>
+   <value>off</value>
+  </oscmapping> 
+ 
+</mididmx>  
+

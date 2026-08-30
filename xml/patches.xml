@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mididmx>
+
+  <patch>
+   <name>Par 1</name>
+   <fixture>PAR 8</fixture>
+   <address>243</address>
+  </patch>
+
+  <patch>
+   <name>Wash Mover 1</name>
+   <fixture>Wash Mover 9</fixture>
+   <address>163</address>
+  </patch>
+
+  <patch>
+   <name>Wash Mover 2</name>
+   <fixture>Wash Mover 9</fixture>
+   <address>216</address>
+  </patch>
+
+  <patch>
+   <name>Wash Mover 3</name>
+   <fixture>Wash Mover 9</fixture>
+   <address>225</address>
+  </patch>
+  
+  <patch>
+   <name>Wash Mover 4</name>
+   <fixture>Wash Mover 9</fixture>
+   <address>234</address>
+  </patch>
+  
+  <patch>
+   <name>Gobo Mover 1</name>
+   <fixture>Gobo Mover 7</fixture>
+   <address>202</address>
+  </patch>
+  
+  <patch>
+   <name>Gobo Mover 2</name>
+   <fixture>Gobo Mover 7</fixture>
+   <address>209</address>
+  </patch>
+
+
+  <patch>
+   <name>DMXHaze</name>
+   <fixture>DMXHaze</fixture>
+   <address>136</address>
+  </patch>
+  
+  <patch>
+   <name>Mini Mover 1</name>
+   <fixture>Mini Mover 13</fixture>
+   <address>137</address>
+  </patch>
+  
+  <patch>
+   <name>Mini Mover 2</name>
+   <fixture>Mini Mover 13</fixture>
+   <address>150</address>
+  </patch>
+
+  <patch>
+   <name>gls4</name>
+   <fixture>gls4</fixture>
+   <address>1</address>
+  </patch>
+   
+  <patch>
+   <name>led strip</name>
+   <fixture>led strip</fixture>
+   <address>16</address>
+  </patch>
+  
+  <patch>
+   <name>Slender Beams</name>
+   <fixture>SlenderBeam6</fixture>
+   <address>130</address>
+  </patch>
+  
+  <patch>
+   <name>lasers</name>
+   <fixture>stairville laser</fixture>
+   <address>19</address>
+  </patch>
+  
+  <patch>
+   <name>laser2</name>
+   <fixture>stairville laser</fixture>
+   <address>27</address>
+  </patch>
+  
+  <patch>
+   <name>laser3</name>
+   <fixture>stairville laser</fixture>
+   <address>36</address>
+  </patch>
+  
+  <patch>
+   <name>laser4</name>
+   <fixture>stairville laser</fixture>
+   <address>172</address>
+  </patch>
+  
+  <patch>
+   <name>laser5</name>
+   <fixture>stairville laser</fixture>
+   <address>180</address>
+  </patch>
+  
+  <patch>
+   <name>led panel 1</name>
+   <fixture>led panel 150</fixture>
+   <address>49</address>
+  </patch>
+  
+  <patch>
+   <name>led panel 2</name>
+   <fixture>led panel 150</fixture>
+   <address>57</address>
+  </patch>
+  
+  <patch>
+   <name>qpix</name>
+   <fixture>q pix batten 18</fixture>
+   <address>65</address>
+  </patch>
+  
+  <patch>
+   <name>LEDBar Front Facing</name>
+   <fixture>led bar 240 5</fixture>
+   <address>94</address>
+  </patch>
+  
+  <patch>
+   <name>LEDBar Rear Facing</name>
+   <fixture>led bar 240 5</fixture>
+   <address>89</address>
+  </patch>
+  
+  <patch>
+   <name>Cameo Tri Mover</name>
+   <fixture>CameoTriMover</fixture>
+   <address>120</address>
+  </patch>
+  
+  <patch>
+   <name>Slender Beams14</name>
+   <fixture>SlenderBeam14</fixture>
+   <address>188</address>
+  </patch>
+  
+</mididmx>
+

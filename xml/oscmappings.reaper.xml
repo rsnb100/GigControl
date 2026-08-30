@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mididmx>
+
+  <!-- Reaper Playback Mappings -->
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/radioactive</address>
+   <command>sendosc</command>
+   <sendaddress>/marker</sendaddress>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/radioactive</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/stop</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/stop</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thriller</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>3</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thriller</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/intro</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>5</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/intro</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thrill1</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>7</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thrill1</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thrill2</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>9</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thrill2</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thrill3</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>11</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thrill3</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thrill4</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>13</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/thrill4</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/hellbell</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>15</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/hellbell</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+ <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/upfunk</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>17</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/upfunk</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+ <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/owner</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>19</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/owner</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+ <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/eat</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>21</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/eat</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+ <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/sowing</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>23</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/sowing</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+  
+ <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/scooby</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>25</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/scooby</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+ <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/ghost</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>27</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/ghost</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+ <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/money</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>29</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/money</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+  
+ <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/onevision</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/marker</sendaddress>
+   <port>8001</port>
+   <value>31</value>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/reaper/onevision</address>
+   <command>sendosc</command>
+   <ip>127.0.0.1</ip>
+   <type>float</type>
+   <sendaddress>/action/1007</sendaddress>
+   <port>8001</port>
+   <value>1</value>
+  </oscmapping>
+
+  
+</mididmx>

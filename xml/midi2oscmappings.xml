@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<midiosc>
+  <mapping note="00" address="/test" />
+  <mapping note="01" address="/test1" />
+  <mapping note="02" address="/test2" />
+  <mapping note="03" address="/test3" />
+  <mapping note="04" address="/test4" />
+  <mapping note="05" address="/test5" />
+  <mapping note="10" address="/test10" />
+  <mapping note="20" address="/test20" />
+  <mapping note="51" address="/AllOff" />
+</midiosc>

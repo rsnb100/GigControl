@@ -1,0 +1,4630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mididmx>
+  <chase>
+    <name>LED Strip Colour Chase</name>
+    <fadein>0</fadein>
+    <hold>300</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>led strip</patch>
+        <function>red</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>led strip</patch>
+        <function>green</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>led strip</patch>
+        <function>blue</function>
+        <value>255</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/midi/ch1/note/43</address>
+      <action>toggle</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/push25</address>
+      <action>flash</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/multitoggle2/1/5</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>Colour Fade Chase</name>
+    <fadein>2000</fadein>
+    <hold>4000</hold>
+    <step>
+      <scene>gls4 red</scene>
+      <scene>led panels red</scene>
+      <scene>led bar back red</scene>
+      <scene>qpix red</scene>
+    </step>
+    <step>
+      <scene>gls4 green</scene>
+      <scene>led panels green</scene>
+      <scene>led bar back green</scene>
+      <scene>qpix green</scene>
+    </step>
+    <step>
+      <scene>gls4 blue</scene>
+      <scene>led panels blue</scene>
+      <scene>led bar back blue</scene>
+      <scene>qpix blue</scene>
+    </step>
+    <oscmapping>
+      <address>/2/push7</address>
+      <action>solo</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/midi/ch1/note/48</address>
+      <action>solo</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/push11</address>
+      <action>flash</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/multitoggle1/1/1</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>Colour Step Chase Tap</name>
+    <fadein>0</fadein>
+    <hold>100</hold>
+    <tap>true</tap>
+    <step>
+      <scene>gls4 red</scene>
+      <scene>led panels red</scene>
+      <scene>led bar back red</scene>
+      <scene>qpix red</scene>
+    </step>
+    <step>
+      <scene>gls4 green</scene>
+      <scene>led panels green</scene>
+      <scene>led bar back green</scene>
+      <scene>qpix green</scene>
+    </step>
+    <step>
+      <scene>gls4 blue</scene>
+      <scene>led panels blue</scene>
+      <scene>led bar back blue</scene>
+      <scene>qpix blue</scene>
+    </step>
+    <oscmapping>
+      <address>/2/push6</address>
+      <action>solo</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/midi/ch1/note/46</address>
+      <action>solo</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/push10</address>
+      <action>flash</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/multitoggle1/1/6</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>White Step Chase Fast</name>
+    <fadein>0</fadein>
+    <hold>100</hold>
+    <step>
+      <scene>gls4 1 white</scene>
+      <scene>led panel 1 white</scene>
+      <scene>led bar back white</scene>
+      <scene>qpix1 white</scene>
+    </step>
+    <step>
+      <scene>gls4 3 white</scene>
+      <scene>led panel 2 white</scene>
+      <scene>qpix3 white</scene>
+    </step>
+    <step>
+      <scene>gls4 2 white</scene>
+      <scene>led panel 1 white</scene>
+      <scene>led bar back white</scene>
+      <scene>qpix2 white</scene>
+    </step>
+    <step>
+      <scene>gls4 4 white</scene>
+      <scene>led panel 2 white</scene>
+      <scene>qpix4 white</scene>
+    </step>
+    <oscmapping>
+      <address>/2/push5</address>
+      <action>solo</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/midi/ch1/note/44</address>
+      <action>solo</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/push9</address>
+      <action>flash</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/multitoggle1/1/5</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>LED Strip Strobe</name>
+    <fadein>0</fadein>
+    <hold>50</hold>
+    <step>
+      <scene>led strip white</scene>
+    </step>
+    <step>
+      <scene>led strip off</scene>
+    </step>
+    <oscmapping>
+      <address>/1/push24</address>
+      <action>flash</action>
+    </oscmapping>
+    <oscmapping>
+      <address>/1/multitoggle2/1/6</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>TMH6 Pan</name>
+    <fadein>20000</fadein>
+    <hold>22000</hold>
+    <step>
+      <function>
+        <patch>tmh6</patch>
+        <function>pan</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>tmh6</patch>
+        <function>pan</function>
+        <value>0</value>
+      </function>
+    </step>
+  </chase>
+  <chase>
+    <name>TMH6 Pan Fast</name>
+    <fadein>0</fadein>
+    <hold>4000</hold>
+    <step>
+      <function>
+        <patch>tmh6</patch>
+        <function>pan</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>tmh6</patch>
+        <function>pan</function>
+        <value>0</value>
+      </function>
+    </step>
+  </chase>
+  <chase>
+    <name>Lasers Slow Tilt</name>
+    <fadein>3000</fadein>
+    <hold>4000</hold>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>tilt</function>
+        <value>96</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>tilt</function>
+        <value>96</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>tilt</function>
+        <value>32</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>tilt</function>
+        <value>32</value>
+      </function>
+    </step>
+  </chase>
+  <chase>
+    <name>Lasers Slow Pan</name>
+    <fadein>3000</fadein>
+    <hold>4000</hold>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>pan</function>
+        <value>32</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>pan</function>
+        <value>32</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>pan</function>
+        <value>96</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>pan</function>
+        <value>96</value>
+      </function>
+    </step>
+  </chase>
+  <chase>
+    <name>Cameo Colours</name>
+    <fadein>20000</fadein>
+    <hold>20000</hold>
+    <step>
+      <function>
+        <patch>Cameo Tri Mover</patch>
+        <function>colour</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Cameo Tri Mover</patch>
+        <function>rotate</function>
+        <value>14</value>
+      </function>
+      <function>
+        <patch>Cameo Tri Mover</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Cameo Tri Mover</patch>
+        <function>colour</function>
+        <value>1</value>
+      </function>
+      <function>
+        <patch>Cameo Tri Mover</patch>
+        <function>rotate</function>
+        <value>14</value>
+      </function>
+      <function>
+        <patch>Cameo Tri Mover</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+    </step>
+  </chase>
+  <chase>
+    <name>Movers Tap Chase</name>
+    <fadein>0</fadein>
+    <hold>200</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>move</function>
+        <value>86</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>Move Speed</function>
+        <value>109</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>move</function>
+        <value>86</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>Move Speed</function>
+        <value>109</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>Colour</function>
+        <value>1</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>move</function>
+        <value>86</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>Move Speed</function>
+        <value>109</value>
+      </function>
+      <function>
+        <patch>Slender Beams</patch>
+        <function>Colour</function>
+        <value>2</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/1/multitoggle5/2/3</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>Lasers Chase 1</name>
+    <fadein>0</fadein>
+    <hold>633</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/lasers/ontoggle/1/4</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>Lasers Chase 2</name>
+    <fadein>0</fadein>
+    <hold>1600</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/lasers/ontoggle/1/3</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>Lasers Chase 3</name>
+    <fadein>0</fadein>
+    <hold>633</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/lasers/ontoggle/1/2</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>Lasers Chase 4</name>
+    <fadein>0</fadein>
+    <hold>633</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>lasers</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser2</patch>
+        <function>mode</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>laser3</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser4</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>laser5</patch>
+        <function>mode</function>
+        <value>0</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/lasers/ontoggle/1/1</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>BluRed Fade Chase</name>
+    <fadein>2000</fadein>
+    <hold>4000</hold>
+    <step>
+      <scene>gls4 red</scene>
+      <scene>led panels red</scene>
+      <scene>led bar back red</scene>
+      <scene>qpix red</scene>
+    </step>
+    <step>
+      <scene>gls4 blue</scene>
+      <scene>led panels blue</scene>
+      <scene>led bar back blue</scene>
+      <scene>qpix blue</scene>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>25</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>64</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>15</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>64</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>72</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>187</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>187</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>71</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>71</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/1/multitoggle1/1/2</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>BluRed Step Chase Tap</name>
+    <fadein>0</fadein>
+    <hold>633</hold>
+    <tap>true</tap>
+    <step>
+      <scene>gls4 red</scene>
+      <scene>led panels red</scene>
+      <scene>led bar back red</scene>
+      <scene>qpix red</scene>
+    </step>
+    <step>
+      <scene>gls4 blue</scene>
+      <scene>led panels blue</scene>
+      <scene>led bar back blue</scene>
+      <scene>qpix blue</scene>
+    </step>
+    <oscmapping>
+      <address>/1/multitoggle1/1/3</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Cross 1</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>64</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>170</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>108</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>170</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>64</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>170</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>108</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>170</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>108</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>170</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>64</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>170</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>108</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>170</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>64</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>170</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/2/4</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 RGB Chs1</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>9</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>8</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>8</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>8</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>25</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>25</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>25</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>25</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>42</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>42</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>42</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>42</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/colourtoggle/2/5</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 RB Chs1</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>9</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>8</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>8</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>8</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>42</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>42</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>42</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>42</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/colourtoggle/1/1</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 White Chs1</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>58</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>58</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>58</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/colourtoggle/2/6</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Slow Sweep</name>
+    <fadein>8000</fadein>
+    <hold>8000</hold>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>52</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>169</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>52</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>169</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>52</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>169</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>52</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>169</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>118</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>169</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>118</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>169</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>118</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>169</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>118</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>169</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>54</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>200</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>54</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>200</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>54</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>200</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>54</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>200</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>118</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>200</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>118</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>200</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>118</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>200</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>118</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>200</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/2/5</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Wave</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>90</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>192</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>90</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>90</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>192</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>192</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>192</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>192</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/2/6</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Mad</name>
+    <fadein>0</fadein>
+    <hold>500</hold>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>35</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>132</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>36</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>22</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>71</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>132</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>70</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>152</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>101</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>60</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>218</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>202</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>199</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>27</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>62</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>207</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>24</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>52</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>125</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>110</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>109</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>205</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>207</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>106</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>190</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>56</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>209</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>9</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>47</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/2/7</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Mad Slow</name>
+    <fadein>6000</fadein>
+    <hold>6000</hold>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>35</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>132</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>36</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>22</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>71</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>132</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>70</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>152</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>101</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>60</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>218</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>202</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>199</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>27</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>62</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>207</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>24</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>52</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>125</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>110</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>109</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>205</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>207</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>106</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>190</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>56</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>209</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>9</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>47</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/1/1</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Mad Med</name>
+    <fadein>3000</fadein>
+    <hold>3000</hold>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>35</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>132</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>36</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>22</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>71</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>132</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>70</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>152</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>101</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>60</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>218</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>202</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>199</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>27</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>62</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>207</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>24</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>52</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>125</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>110</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>109</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>205</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>207</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>106</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>190</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>56</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>209</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>9</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>47</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/1/2</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Col Chs</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>10</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>26</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>43</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>20</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>30</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>56</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>17</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>49</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>43</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>24</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>26</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>13</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>13</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>31</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>42</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>31</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>26</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>43</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>22</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>45</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>49</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>15</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>40</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>20</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/colourtoggle/1/2</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Single Colours</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>20</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>22</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>13</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>14</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>32</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>27</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>26</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>39</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>53</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>57</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>47</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/colourtoggle/1/3</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Fan</name>
+    <fadein>500</fadein>
+    <hold>1000</hold>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>25</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>20</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>15</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>20</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>72</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>237</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>237</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>25</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>15</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>72</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>127</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/1/4</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Fan Slow</name>
+    <fadein>6000</fadein>
+    <hold>8000</hold>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>25</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>20</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>15</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>20</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>72</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>237</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>237</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>25</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>15</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>72</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>127</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>127</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/1/5</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 White Chs2</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>58</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>58</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>58</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>58</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>58</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>58</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour1</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour2</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour3</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>Colour4</function>
+        <value>58</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/colourtoggle/1/4</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>GB7 Chase1</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>145</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>145</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>254</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>254</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/gobo7/movetoggle/2/1</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>GB7 Bounce</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>69</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Gobo</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>69</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Gobo</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>201</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Gobo</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>46</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>201</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Gobo</function>
+        <value>0</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/gobo7/movetoggle/2/2</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>GB7 Swing</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>1</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>201</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Gobo</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>1</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>201</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Gobo</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>1</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>53</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Gobo</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>1</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>53</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Colour</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Gobo</function>
+        <value>0</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/gobo7/movetoggle/2/3</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>GB7 Fast</name>
+    <fadein>0</fadein>
+    <hold>400</hold>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>145</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>145</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>255</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>87</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>254</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>254</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>34</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/gobo7/movetoggle/2/4</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>GB7 Mad Chase</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>71</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>71</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>106</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>71</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>106</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>71</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>106</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>229</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>106</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>229</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>215</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>229</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>215</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>229</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>215</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>59</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>215</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>59</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>141</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>59</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>141</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>59</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>67</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>86</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>67</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>86</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Pan</function>
+        <value>92</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 1</patch>
+        <function>Tilt</function>
+        <value>222</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Pan</function>
+        <value>92</value>
+      </function>
+      <function>
+        <patch>Gobo Mover 2</patch>
+        <function>Tilt</function>
+        <value>222</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/gobo7/movetoggle/1/3</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>SB14 Walk</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>90</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan1</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt1</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan2</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt2</function>
+        <value>192</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan3</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt3</function>
+        <value>90</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>pan4</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Slender Beams14</patch>
+        <function>tilt4</function>
+        <value>192</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/sb14/movetoggle/1/6</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>Mini Movers Mad</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <step>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>pan</function>
+        <value>58</value>
+      </function>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>tilt</function>
+        <value>166</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>pan</function>
+        <value>81</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>tilt</function>
+        <value>206</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>pan</function>
+        <value>81</value>
+      </function>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>tilt</function>
+        <value>170</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>pan</function>
+        <value>74</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>tilt</function>
+        <value>85</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>pan</function>
+        <value>52</value>
+      </function>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>tilt</function>
+        <value>91</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>pan</function>
+        <value>130</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>tilt</function>
+        <value>41</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>pan</function>
+        <value>102</value>
+      </function>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>tilt</function>
+        <value>22</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>pan</function>
+        <value>148</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>tilt</function>
+        <value>172</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>pan</function>
+        <value>131</value>
+      </function>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>tilt</function>
+        <value>164</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>pan</function>
+        <value>203</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>tilt</function>
+        <value>240</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>pan</function>
+        <value>114</value>
+      </function>
+      <function>
+        <patch>Mini Mover 1</patch>
+        <function>tilt</function>
+        <value>124</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>pan</function>
+        <value>85</value>
+      </function>
+      <function>
+        <patch>Mini Mover 2</patch>
+        <function>tilt</function>
+        <value>157</value>
+      </function>
+    </step>
+  </chase>
+  <chase>
+    <name>LEDBar Front RGB</name>
+    <fadein>0</fadein>
+    <hold>1000</hold>
+    <tap>true</tap>
+    <step>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>red</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>green</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>red</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>green</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>green</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>red</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>green</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>blue</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>red</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>green</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/1/multitoggle3/1/6</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+  <chase>
+    <name>LEDBar Front Fade</name>
+    <fadein>2000</fadein>
+    <hold>2000</hold>
+    <step>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>red</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>green</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>red</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>green</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>green</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>red</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>green</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+    </step>
+    <step>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>blue</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>dimmer</function>
+        <value>255</value>
+      </function>
+      <function>
+        <patch>LEDBar Front Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>red</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>green</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>blue</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>dimmer</function>
+        <value>0</value>
+      </function>
+      <function>
+        <patch>LEDBar Rear Facing</patch>
+        <function>strobe</function>
+        <value>0</value>
+      </function>
+    </step>
+    <oscmapping>
+      <address>/1/multitoggle3/1/7</address>
+      <action>flash</action>
+    </oscmapping>
+  </chase>
+</mididmx>

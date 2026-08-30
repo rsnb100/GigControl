@@ -1,0 +1,1 @@
+﻿The xml folder containing the xml files need to be in the same directory as the main executable.

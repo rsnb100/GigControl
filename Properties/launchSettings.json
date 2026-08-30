@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GigControl": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\rsnb1\\Documents\\GigControl\\GigControl\\bin\\Debug\\net10.0-windows"
+    }
+  }
+}

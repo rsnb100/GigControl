@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mididmx>
+
+<!-- X32 Mappings --> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/BandMute</address>
+   <command>x32</command>
+   <sendaddress>/dca/8/on</sendaddress>
+   <value>OFF</value>
+   <type>string</type>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/BandOn</address>
+   <command>x32</command>
+   <sendaddress>/dca/8/on</sendaddress>
+   <value>ON</value>
+   <type>string</type>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/FXMute</address>
+   <command>x32</command>
+   <sendaddress>/fxrtn/03/mix/on</sendaddress>
+   <value>OFF</value>
+   <type>string</type>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/FXMute</address>
+   <command>x32</command>
+   <sendaddress>/fxrtn/05/mix/on</sendaddress>
+   <value>OFF</value>
+   <type>string</type>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/FXMute</address>
+   <command>x32</command>
+   <sendaddress>/config/mute/1</sendaddress>
+   <value>ON</value>
+   <type>string</type>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/FXOn</address>
+   <command>x32</command>
+   <sendaddress>/fxrtn/03/mix/on</sendaddress>
+   <value>ON</value>
+   <type>string</type>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/FXOn</address>
+   <command>x32</command>
+   <sendaddress>/fxrtn/05/mix/on</sendaddress>
+   <value>ON</value>
+   <type>string</type>
+  </oscmapping>
+  
+   <oscmapping>
+   <maptype>command</maptype>
+   <address>/FXOn</address>
+   <command>x32</command>
+   <sendaddress>/config/mute/1</sendaddress>
+   <value>OFF</value>
+   <type>string</type>
+  </oscmapping>
+  
+<!-- X32 Nexus 7 Fader Mappings --> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/kick</address>
+   <command>x32-fader</command>
+   <x32address>/ch/01/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/snare</address>
+   <command>x32-fader</command>
+   <x32address>/ch/02/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/hats</address>
+   <command>x32-fader</command>
+   <x32address>/ch/03/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/oh</address>
+   <command>x32-fader</command>
+   <x32address>/ch/08/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/bass</address>
+   <command>x32-fader</command>
+   <x32address>/ch/09/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+   
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/samgt</address>
+   <command>x32-fader</command>
+   <x32address>/ch/11/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/ashgt</address>
+   <command>x32-fader</command>
+   <x32address>/ch/10/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/acoustic</address>
+   <command>x32-fader</command>
+   <x32address>/ch/12/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/keys</address>
+   <command>x32-fader</command>
+   <x32address>/ch/13/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/sax</address>
+   <command>x32-fader</command>
+   <x32address>/ch/15/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/click</address>
+   <command>x32-fader</command>
+   <x32address>/ch/22/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/jakevox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/18/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/mikevox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/20/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/samvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/19/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/ashvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/17/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tomvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/21/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/track</address>
+   <command>x32-fader</command>
+   <x32address>/ch/23/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/projector</address>
+   <command>x32-fader</command>
+   <x32address>/auxin/05/mix/07/level</x32address>
+   <client-ip>192.168.1.230</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  
+<!-- X32 Hudl Fader Mappings --> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/kick</address>
+   <command>x32-fader</command>
+   <x32address>/ch/01/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/snare</address>
+   <command>x32-fader</command>
+   <x32address>/ch/02/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/hats</address>
+   <command>x32-fader</command>
+   <x32address>/ch/03/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+      
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/samgt</address>
+   <command>x32-fader</command>
+   <x32address>/ch/11/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/ashgt</address>
+   <command>x32-fader</command>
+   <x32address>/ch/10/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+   
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/acoustic</address>
+   <command>x32-fader</command>
+   <x32address>/ch/12/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/keys</address>
+   <command>x32-fader</command>
+   <x32address>/ch/13/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/track</address>
+   <command>x32-fader</command>
+   <x32address>/ch/23/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/click</address>
+   <command>x32-fader</command>
+   <x32address>/ch/22/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/jakevox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/18/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tomvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/21/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/oh</address>
+   <command>x32-fader</command>
+   <x32address>/ch/08/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/bass</address>
+   <command>x32-fader</command>
+   <x32address>/ch/09/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/mikevox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/20/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/samvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/19/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/ashvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/17/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tom1</address>
+   <command>x32-fader</command>
+   <x32address>/ch/04/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>  
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tom2</address>
+   <command>x32-fader</command>
+   <x32address>/ch/05/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>  
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tom3</address>
+   <command>x32-fader</command>
+   <x32address>/ch/06/mix/05/level</x32address>
+   <client-ip>192.168.1.231</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+
+<!-- X32 iPad Pro Fader Mappings --> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/kick</address>
+   <command>x32-fader</command>
+   <x32address>/ch/01/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/snare</address>
+   <command>x32-fader</command>
+   <x32address>/ch/02/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/hats</address>
+   <command>x32-fader</command>
+   <x32address>/ch/03/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+      
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/samgt</address>
+   <command>x32-fader</command>
+   <x32address>/ch/11/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/ashgt</address>
+   <command>x32-fader</command>
+   <x32address>/ch/10/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+   
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/acoustic</address>
+   <command>x32-fader</command>
+   <x32address>/ch/12/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/keys</address>
+   <command>x32-fader</command>
+   <x32address>/ch/13/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/track</address>
+   <command>x32-fader</command>
+   <x32address>/ch/23/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/usb</address>
+   <command>x32-fader</command>
+   <x32address>/auxin/03/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/jakevox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/18/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tomvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/21/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/oh</address>
+   <command>x32-fader</command>
+   <x32address>/ch/07/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/bass</address>
+   <command>x32-fader</command>
+   <x32address>/ch/09/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/mikevox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/20/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/samvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/19/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/ashvox</address>
+   <command>x32-fader</command>
+   <x32address>/ch/17/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tom1</address>
+   <command>x32-fader</command>
+   <x32address>/ch/04/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>  
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tom2</address>
+   <command>x32-fader</command>
+   <x32address>/ch/05/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>  
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tom3</address>
+   <command>x32-fader</command>
+   <x32address>/ch/06/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/tom4</address>
+   <command>x32-fader</command>
+   <x32address>/ch/16/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/fader/ddl</address>
+   <command>x32-fader</command>
+   <x32address>/fxrtn/05/mix/fader</x32address>
+   <client-ip>192.168.1.229</client-ip>
+   <client-port>9000</client-port>
+  </oscmapping>
+
+<!-- Misc --> 
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/USBMute</address>
+   <command>x32</command>
+   <sendaddress>/auxin/03/mix/on</sendaddress>
+   <value>OFF</value>
+   <type>string</type>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/USBOn</address>
+   <command>x32</command>
+   <sendaddress>/auxin/03/mix/on</sendaddress>
+   <value>ON</value>
+   <type>string</type>
+  </oscmapping>
+  
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/X32Tap</address>
+   <command>x32tap</command>
+   <sendaddress>/fx/3/par/02</sendaddress>
+   <value>1</value>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/EndSong</address>
+   <command>x32</command>
+   <sendaddress>/fxrtn/03/mix/on</sendaddress>
+   <value>OFF</value>
+   <type>string</type>
+  </oscmapping>
+
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/EndSong</address>
+   <command>x32</command>
+   <sendaddress>/fxrtn/05/mix/on</sendaddress>
+   <value>OFF</value>
+   <type>string</type>
+  </oscmapping>
+  
+  <oscmapping>
+   <maptype>command</maptype>
+   <address>/EndSong</address>
+   <command>x32</command>
+   <sendaddress>/config/mute/1</sendaddress>
+   <value>ON</value>
+   <type>string</type>
+  </oscmapping>
+  
+ </mididmx>
