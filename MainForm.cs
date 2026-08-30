@@ -1637,41 +1637,7 @@ namespace DMXServer
                     StringComparer.OrdinalIgnoreCase);
         }
 
-        private string? FindNewestFile(string rootPath, string fileName)
-        {
-            if (string.IsNullOrWhiteSpace(rootPath) || !Directory.Exists(rootPath))
-                return null;
-
-            string? newest = null;
-            var newestTime = DateTime.MinValue;
-
-            try
-            {
-                foreach (var file in Directory.EnumerateFiles(rootPath, fileName, SearchOption.AllDirectories))
-                {
-                    try
-                    {
-                        var info = new FileInfo(file);
-                        if (info.LastWriteTime > newestTime)
-                        {
-                            newestTime = info.LastWriteTime;
-                            newest = file;
-                        }
-                    }
-                    catch
-                    {
-                        // ignore inaccessible files
-                    }
-                }
-            }
-            catch
-            {
-                // ignore directory access exceptions
-            }
-
-            return newest;
-        }
-
+        
         private void CreateWordDocument(
             string fileName,
             string title,
