@@ -23,6 +23,8 @@ namespace DMXServer
         {
             mainForm = callingForm as MainForm;
             InitializeComponent();
+            // apply theme from main form
+            try { if (mainForm != null) mainForm.ApplyThemeToForm(this, mainForm.DarkModeEnabled); } catch { }
 
             ReadSetlistXML(mainForm.currentShow);
             FillLBAvailable();

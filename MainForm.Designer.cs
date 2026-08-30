@@ -1,4 +1,8 @@
-﻿namespace DMXServer
+﻿using Rug.Osc;
+using System.Net;
+using System.Threading;
+
+namespace DMXServer
 {
     partial class MainForm
     {
@@ -15,16 +19,17 @@
         {
             if (disposing && (components != null))
             {
-                components.Dispose();
                 if (receiver != null) receiver.Dispose();
+                components.Dispose();
+                
                 //if (udpClient != null) udpClient.Close();
             }
-            try
-            {
-                base.Dispose(disposing);
-            }
-            catch { }
+            
+            base.Dispose(disposing);
+
         }
+
+        
 
         #region Windows Form Designer generated code
 
@@ -258,6 +263,19 @@
             this.ddlShows.TabIndex = 34;
             this.ddlShows.SelectedIndexChanged += new System.EventHandler(this.ddlShows_SelectedIndexChanged);
             // 
+            // cbDarkMode
+            // 
+            this.cbDarkMode = new System.Windows.Forms.CheckBox();
+            this.cbDarkMode.AutoSize = true;
+            this.cbDarkMode.Location = new System.Drawing.Point(628, 20);
+            this.cbDarkMode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbDarkMode.Name = "cbDarkMode";
+            this.cbDarkMode.Size = new System.Drawing.Size(104, 24);
+            this.cbDarkMode.TabIndex = 44;
+            this.cbDarkMode.Text = "Dark mode";
+            this.cbDarkMode.UseVisualStyleBackColor = true;
+            this.cbDarkMode.CheckedChanged += new System.EventHandler(this.cbDarkMode_CheckedChanged);
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -276,6 +294,7 @@
             this.ClientSize = new System.Drawing.Size(783, 886);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.ddlShows);
+            this.Controls.Add(this.cbDarkMode);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -312,6 +331,7 @@
         private System.Windows.Forms.Label lblOscIp;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnSetlistExport;
+        private System.Windows.Forms.CheckBox cbDarkMode;
     }
 }
 

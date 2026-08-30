@@ -82,6 +82,7 @@ namespace DMXServer
         DateTime ignoreReaper = DateTime.MinValue;
         public string oscMarkerSendPort = "7000";
 
+
         #endregion Globals
 
 
@@ -92,6 +93,21 @@ namespace DMXServer
             InitializeComponent();
 
         }
+
+        private void cbDarkMode_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // apply to all open forms
+                foreach (System.Windows.Forms.Form f in System.Windows.Forms.Application.OpenForms)
+                {
+                    ApplyThemeToForm(f, cbDarkMode.Checked);
+                }
+            }
+            catch { }
+        }
+
+        public bool DarkModeEnabled { get { try { return cbDarkMode != null && cbDarkMode.Checked; } catch { return false; } } }
 
         protected override void OnLoad(EventArgs e)
         {
@@ -104,16 +120,17 @@ namespace DMXServer
 
         protected override void OnClosing(CancelEventArgs e)
         {
-            base.OnClosing(e);
+            
 
             try
             {
-
-                SaveSettings(currentShow);
-                WriteAllFiles();
+                    SaveSettings(currentShow);
+                    WriteAllFiles();
+    
 
                 StopMidi();
                 StopOSC();
+                base.OnClosing(e);
             }
             catch (Exception ex)
             {
@@ -152,10 +169,112 @@ namespace DMXServer
             StopOSC();
 
             LoadSettings(currentShow);
+
+            // Apply theme after settings loaded
+            try
+            {
+                ApplyTheme(cbDarkMode.Checked);
+            }
+            catch { }
             Reload();
 
 
             SaveGlobalSettings();
+        }
+
+        private void ApplyTheme(bool dark)
+        {
+            ApplyThemeToForm(this, dark);
+        }
+
+        public void ApplyThemeToForm(System.Windows.Forms.Form form, bool dark)
+        {
+            if (form == null) return;
+
+            System.Drawing.Color formBack = dark ? System.Drawing.Color.FromArgb(30, 30, 30) : SystemColors.Control;
+            System.Drawing.Color panelBack = dark ? System.Drawing.Color.FromArgb(28, 28, 28) : SystemColors.Control;
+            System.Drawing.Color windowBack = dark ? System.Drawing.Color.FromArgb(45, 45, 48) : SystemColors.Window;
+            System.Drawing.Color controlBack = dark ? System.Drawing.Color.FromArgb(63, 63, 70) : SystemColors.Control;
+            System.Drawing.Color fore = dark ? System.Drawing.Color.White : SystemColors.ControlText;
+
+            form.BackColor = formBack;
+            form.ForeColor = fore;
+
+            foreach (System.Windows.Forms.Control c in form.Controls)
+            {
+                try
+                {
+                    if (c is System.Windows.Forms.Panel)
+                    {
+                        c.BackColor = panelBack;
+                        c.ForeColor = fore;
+                        foreach (System.Windows.Forms.Control cc in c.Controls)
+                        {
+                            if (cc is System.Windows.Forms.Button)
+                            {
+                                cc.BackColor = controlBack;
+                                cc.ForeColor = fore;
+                            }
+                            else if (cc is System.Windows.Forms.ListBox)
+                            {
+                                cc.BackColor = windowBack;
+                                cc.ForeColor = fore;
+                            }
+                            else if (cc is System.Windows.Forms.ComboBox)
+                            {
+                                cc.BackColor = windowBack;
+                                cc.ForeColor = fore;
+                            }
+                            else if (cc is System.Windows.Forms.CheckBox)
+                            {
+                                cc.BackColor = panelBack;
+                                cc.ForeColor = fore;
+                            }
+                            else if (cc is System.Windows.Forms.Label)
+                            {
+                                cc.BackColor = panelBack;
+                                cc.ForeColor = fore;
+                            }
+                            else if (cc is System.Windows.Forms.TextBox)
+                            {
+                                cc.BackColor = windowBack;
+                                cc.ForeColor = fore;
+                            }
+                        }
+                    }
+                    else if (c is System.Windows.Forms.ListBox)
+                    {
+                        c.BackColor = windowBack;
+                        c.ForeColor = fore;
+                    }
+                    else if (c is System.Windows.Forms.Button)
+                    {
+                        c.BackColor = controlBack;
+                        c.ForeColor = fore;
+                    }
+                    else if (c is System.Windows.Forms.ComboBox)
+                    {
+                        c.BackColor = windowBack;
+                        c.ForeColor = fore;
+                    }
+                    else if (c is System.Windows.Forms.CheckBox)
+                    {
+                        c.BackColor = formBack;
+                        c.ForeColor = fore;
+                    }
+                    else if (c is System.Windows.Forms.Label)
+                    {
+                        c.BackColor = formBack;
+                        c.ForeColor = fore;
+                    }
+                    else if (c is System.Windows.Forms.TextBox)
+                    {
+                        c.BackColor = windowBack;
+                        c.ForeColor = fore;
+                    }
+                }
+                catch { }
+            }
         }
 
 
@@ -225,7 +344,7 @@ namespace DMXServer
                     {
                         if (!oscThread.Join(500))
                         {
-                            try { oscThread.Interrupt(); } catch { }
+                            //try { oscThread.Interrupt(); } catch { }
                         }
                     }
 
@@ -1061,6 +1180,16 @@ namespace DMXServer
 
             LoadSettings(currentShow);
 
+            // Apply theme to all open forms based on global setting
+            try
+            {
+                foreach (System.Windows.Forms.Form f in System.Windows.Forms.Application.OpenForms)
+                {
+                    ApplyThemeToForm(f, cbDarkMode.Checked);
+                }
+            }
+            catch { }
+
             OutputText("Local IP Addresses");
             var ips = GetIPv4Address();
             foreach (var ip in ips)
@@ -1118,6 +1247,12 @@ namespace DMXServer
                 XElement root = XElement.Load("global.xml");
 
                 if (root.Element("CurrentShow") != null) currentShow = root.Element("CurrentShow").Value;
+                if (root.Element("DarkMode") != null)
+                {
+                    try { cbDarkMode.Checked = (root.Element("DarkMode").Value.ToLower() == "true"); } catch { }
+                }
+                // apply theme immediately
+                try { foreach (System.Windows.Forms.Form f in System.Windows.Forms.Application.OpenForms) ApplyThemeToForm(f, cbDarkMode.Checked); } catch { }
             }
             catch (Exception ex)
             {
@@ -1136,6 +1271,7 @@ namespace DMXServer
                     writer.WriteStartElement("Settings");
 
                     writer.WriteElementString("CurrentShow", (ddlShows.SelectedItem ?? "").ToString());
+                    writer.WriteElementString("DarkMode", cbDarkMode.Checked.ToString());
 
                     writer.WriteEndElement();
                 }
@@ -1202,6 +1338,7 @@ namespace DMXServer
 
 
                     writer.WriteElementString("OutTextEnabled", cbOutText.Checked.ToString());
+                    writer.WriteElementString("DarkMode", cbDarkMode.Checked.ToString());
 
                     //writer.WriteElementString("EnableArtNet", cbArtNet.Checked.ToString());
                     //writer.WriteElementString("ArtNetAddress", artNetBroadcastIP);
@@ -1283,6 +1420,14 @@ namespace DMXServer
                 if (root.Element("BaseSceneActive") != null) BaseSceneActive = (root.Element("BaseSceneActive").Value.ToLower() == "true");
 
                 if (root.Element("OutTextEnabled") != null) cbOutText.Checked = (root.Element("OutTextEnabled").Value.ToLower() == "true");
+                if (root.Element("DarkMode") != null)
+                {
+                    try { cbDarkMode.Checked = (root.Element("DarkMode").Value.ToLower() == "true"); }
+                    catch { cbDarkMode.Checked = false; }
+                }
+
+                // Apply theme immediately after loading setting
+                try { ApplyTheme(cbDarkMode.Checked); } catch { }
 
 
             }
