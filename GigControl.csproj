@@ -34,9 +34,6 @@
     <StartupObject>DMXServer.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ArtNet">
-      <HintPath>.\ArtNet.dll</HintPath>
-    </Reference>
     <Reference Include="CannedBytes">
       <HintPath>.\CannedBytes.dll</HintPath>
     </Reference>
