@@ -568,7 +568,7 @@ namespace DMXServer
 
         }
 
-        private void SendReaper(string sendAddress)
+        public void SendReaper(string sendAddress)
         {
             OutputText("Reaper passthrough: " + sendAddress);
             TransmitOSC(sendAddress, (float)1.0, ReaperPort, ReaperIP, true);

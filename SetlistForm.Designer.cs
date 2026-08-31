@@ -45,6 +45,7 @@ namespace DMXServer
             this.clbAllocated = new System.Windows.Forms.CheckedListBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSendReaper = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbAvailable
@@ -219,6 +220,18 @@ namespace DMXServer
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnSendReaper
+            // 
+            this.btnSendReaper.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSendReaper.Location = new System.Drawing.Point(252, 580);
+            this.btnSendReaper.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSendReaper.Name = "btnSendReaper";
+            this.btnSendReaper.Size = new System.Drawing.Size(120, 35);
+            this.btnSendReaper.TabIndex = 17;
+            this.btnSendReaper.Text = "Send Reaper";
+            this.btnSendReaper.UseVisualStyleBackColor = true;
+            this.btnSendReaper.Click += new System.EventHandler(this.btnSendReaper_Click);
+            // 
             // SetlistForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -240,6 +253,7 @@ namespace DMXServer
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNewName);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnSendReaper);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -269,5 +283,6 @@ namespace DMXServer
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.CheckedListBox clbAllocated;
+        private System.Windows.Forms.Button btnSendReaper;
     }
 }

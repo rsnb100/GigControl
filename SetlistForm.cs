@@ -576,5 +576,41 @@ namespace DMXServer
             }
         }
 
+        private void btnSendReaper_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (clbAllocated.SelectedItem == null)
+                    return;
+
+                var item = clbAllocated.SelectedItem.ToString();
+
+                var name = item.Contains(". ") ? item.Substring(item.IndexOf('.') + 2) : item;
+
+                var mapping = mainForm.setlistMappings.FirstOrDefault(a => string.Equals(a.Element("name").Value, name, StringComparison.OrdinalIgnoreCase));
+
+                if (mapping == null)
+                {
+                    mainForm.OutputText("Setlist mapping not found for: " + name);
+                    return;
+                }
+
+                var osc = mapping.Element("oscaddress") != null ? mapping.Element("oscaddress").Value : null;
+
+                if (string.IsNullOrEmpty(osc))
+                {
+                    mainForm.OutputText("No OSC address defined for: " + name);
+                    return;
+                }
+
+                // call MainForm's SendReaper to transmit the OSC
+                mainForm.SendReaper(osc);
+            }
+            catch (Exception ex)
+            {
+                try { mainForm.OutputText("Error sending Reaper OSC: " + ex.Message); } catch { }
+            }
+        }
+
     }
 }
